@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hedleysplastering.co.uk/sitemap.xml
