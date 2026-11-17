@@ -297,3 +297,12 @@ h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:850}
 }
 /* about image flush right on desktop */
 .split figure img{width:100%;height:auto}
+
+/* real client logos: even grid, single tone */
+.logo-row{display:grid;grid-template-columns:repeat(6,1fr);gap:1.6rem 2rem;align-items:center;justify-items:center}
+.logo-row li{display:flex;align-items:center;justify-content:center;height:72px;width:100%;opacity:.6;transition:opacity .2s}
+.logo-row li:hover{opacity:1}
+.logo-row img{max-width:100%;height:auto;max-height:64px;width:auto;display:block}
+@media (max-width:1000px){.logo-row{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:700px){.logo-row{grid-template-columns:repeat(3,1fr);gap:1.2rem .8rem}.logo-row li{height:54px}.logo-row img{max-height:44px}}
+@media (max-width:420px){.logo-row{grid-template-columns:repeat(2,1fr)}}
